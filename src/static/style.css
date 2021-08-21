@@ -1,0 +1,153 @@
+header {
+  background-color: #fdfdfd;
+  background-image: url("{{ url_for('static', filename= 'assets/shanks.png')}}");
+  background-size: 100%;
+  height: 400px;
+  margin: 10px;
+  border-radius: 25px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e7e7f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  margin: 10px;
+
+  background-color: goldenrod;
+  border-style: outset;
+  border-color: white;
+  border-top: 4px solid rgb(247, 247, 250);
+  border-bottom: 4px solid rgb(250, 249, 249);
+}
+
+a {
+  margin: 0px;
+  color: #e7e7f3;
+}
+
+h1 {
+  margin: 10px;
+  font-family: Freestyle Script;
+  font-weight: bold;
+  text-align: center;
+
+  position: absolute;
+  top: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: -50%;
+}
+
+h2 {
+  margin: 10px;
+  font-family: Freestyle Script;
+  font-weight: bold;
+
+  font-size: 36px;
+}
+
+.search-box {
+  position: absolute;
+  top: 18.75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background: white;
+}
+
+.search-btn {
+  color: goldenrod;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.search-btn img {
+  margin: 10px;
+  width: 100px;
+
+  border-radius: 50%;
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+  display: inline-block;
+  position: relative;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #626263;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+.row {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+
+  border-radius: 25px;
+  border-style: groove;
+  border-bottom: hidden;
+}
+
+.row img {
+  background-color: #fdfdfd;
+
+  margin: 10px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+  display: inline-block;
+  position: relative;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  padding: 0 10px;
+}
+
+section {
+  height: 424px;
+  margin: 10px;
+
+  border-radius: 25px;
+
+  position: absolute;
+  flex-direction: column;
+  border-style: groove;
+}

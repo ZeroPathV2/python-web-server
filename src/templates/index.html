@@ -1,0 +1,132 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<!--add a favourets list that takes me to regularly used pages
+
+    <li><a href=""target="_blank"></a></li>
+
+    display: flex;
+
+    <div>
+                   <br>
+                     <h2>Quick Nav:</h2>
+                      <a href="https://www.google.com/webhp?hl=en&sa=X&sqi=2&pjf=1&ved=0ahUKEwiby52XybHyAhV-gf0HHSopBycQPAgI"target="_blank">google
+                    
+                    </a>
+                 </div>
+
+
+    section {
+  background-size: 50%;
+  height: 400px;
+
+  margin: 10px;
+
+  border-color: #e7e7f3;
+  border-style: groove;
+  border-left: 2px solid;
+
+  bottom: 0;
+  border-radius: 25px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+}
+
+  <div class="subTitleFavourets">
+            <h2>Favourets:</h2>
+         </div>
+
+
+-->
+<header>
+    <br>
+    <h1>Welcome To Raspberry Pi App</h1>
+    
+     <div class="search-box">
+         <input class="search-txt"type="text"name="" placeholder="Type to search">
+         <a class="search-btn" href="/">
+            <img src="{{ url_for('static', filename= 'assets/search.png')}}" alt="">
+           </a>
+     </div>
+     <br>
+</header>
+<!--Favourets section -->
+<div>
+    <section>
+        <div class="subTitleFavourets">
+            <h2>Favourets:</h2>
+         </div>
+
+        <div class="row">
+<!--New Column-->
+            <div class="column">
+               <figure class="youtubeTag">
+                        <a href="https://www.youtube.com/"target="_blank">
+                          <img src="{{ url_for('static', filename= 'assets/youtube.png')}}" alt="YouTube">
+                          </a>
+                         </figure>
+                         
+                         <figure class="twitchTag">
+                               <a href="https://www.twitch.tv/aceu"target="_blank">
+                             <img src="{{ url_for('static', filename= 'assets/twitchIcon.png')}}" alt="Twitch/ Aceu">
+                          </a>
+                         </figure>
+                         
+                         <figure class="chessTag">
+                            <a href="https://www.chess.com/home"target="_blank">
+                               <img src="{{ url_for('static', filename= 'assets/chess.com.png')}}" alt="Chess.com">
+                           </a>
+                           </figure>
+                  
+              
+            </div>
+ <!--New Column-->
+            <div class="column">
+              <figure class="instaTag">
+                <a href=""target="_blank">
+                   <img src="{{ url_for('static', filename= 'assets/instagramIcon.png')}}" alt="Instagram page">
+               </a>
+               </figure>
+
+               <figure class="whatsappTag">
+                <a href=""target="_blank">
+                   <img src="{{ url_for('static', filename= 'assets/whatsAppIcon.png')}}" alt="Whatsapp page">
+               </a>
+               </figure>
+
+               <figure class="amazon">
+                <a href=""target="_blank">
+                   <img src="{{ url_for('static', filename= 'assets/amazonIcon.png')}}" alt="Amazon page">
+               </a>
+               </figure>
+              
+            </div>
+<!--New Column-->
+            <div class="column">
+              
+            
+            </div>
+            <div class="column">
+              
+              
+            </div>
+          </div>
+    </section>
+</div>
+    
+    <!--New Section-->
+     
+    <div>
+        
+    </div>
+   
+
+
+
+
+
+
+{% endblock %}
